@@ -15,12 +15,8 @@ int pass_score(char *password){
     return score;
 }
 int strength(char *password){
-    int c=0;
-    for (int i=0;i<strlen(password);i++){
-        c++;
-    }
-    printf("\nPassword has a length of %d characters",c);
-    if(c>=8)
+    printf("\nPassword has a length of %d characters",strlen(password));
+    if(strlen(password)>=8)
         
         return 1;
     else
